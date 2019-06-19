@@ -30,5 +30,5 @@ for mv in mvs:
         }
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             ydl.download([url])
-        f.write(url+"\r\n")
+        f.writelines(url)
 f.close()
